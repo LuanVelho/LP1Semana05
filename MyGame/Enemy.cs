@@ -1,3 +1,5 @@
+using System;
+
 namespace MyGame
 {
     public class Enemy
@@ -9,7 +11,7 @@ namespace MyGame
         //Construtor
         public Enemy (string name)
         {
-            this.name = name;
+            this.name = SetName();
             health = 100;
             shield = 0;
         }
@@ -29,6 +31,19 @@ namespace MyGame
                 health -= damageStillToInflict;
                 if (health < 0) health = 0;
             }
+        }
+        
+        public GetHealth()
+        public GetShield()
+        public SetName()
+        {
+            novonome = Console.ReadLine("Qual será o nome?");
+            if (novonome.lenth > 8)
+            {
+                novonome.lenth = 8;
+            }
+            name = novonome;
+            Console.WriteLine(name);
         }
     }
 }
