@@ -38,21 +38,6 @@ namespace MyGame
                 if (health < 0) health = 0;
             }
         }
-
-        public void PickupPowerUp(PowerUp pwu, float fa)
-        {
-            powerUpCount++;
-            if (pwu == PowerUp.Health)
-            {
-                health += fa;
-                if (health > 100) health = 100;
-            }
-            else if (pwu == PowerUp.Shield)
-            {
-                shield += fa;
-                if (shield > 100) shield = 100;
-            }
-        }
         
         public GetHealth()
         {
@@ -71,6 +56,21 @@ namespace MyGame
             }
             name = novonome;
             Console.WriteLine(name);
+        }
+
+        public void PickupPowerUp(PowerUp pwu, float fa)
+        {
+            powerUpCount++;
+            if (pwu == PowerUp.Health)
+            {
+                health += fa;
+                if (health > 100) health = 100;
+            }
+            else if (pwu == PowerUp.Shield)
+            {
+                shield += fa;
+                if (shield > 100) shield = 100;
+            }
         }
 
         static Enemy()
