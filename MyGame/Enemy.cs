@@ -4,9 +4,15 @@ namespace MyGame
 {
     public class Enemy
     {
+        static int powerUpCount;
         private string name;
         private float health;
         private float shield;
+
+        public float GetPowerUp()
+        {
+            return powerUpCount
+        }
 
         //Construtor
         public Enemy (string name)
@@ -32,9 +38,30 @@ namespace MyGame
                 if (health < 0) health = 0;
             }
         }
+
+        public void PickupPowerUp(PowerUp pwu, float fa)
+        {
+            powerUpCount++;
+            if (pwu == PowerUp.Health)
+            {
+                health += fa;
+                if (health > 100) health = 100;
+            }
+            else if (pwu == PowerUp.Shield)
+            {
+                shield += fa;
+                if (shield > 100) shield = 100;
+            }
+        }
         
         public GetHealth()
+        {
+            return health;
+        }
         public GetShield()
+        {
+            return shield;
+        }
         public SetName()
         {
             novonome = Console.ReadLine("Qual será o nome?");
@@ -44,6 +71,11 @@ namespace MyGame
             }
             name = novonome;
             Console.WriteLine(name);
+        }
+
+        static Enemy()
+        {
+            powerUpCount = 0;
         }
     }
 }
