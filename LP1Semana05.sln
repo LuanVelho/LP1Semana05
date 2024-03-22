@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RanDice", "RanDice\RanDice.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGame", "MyGame\MyGame.csproj", "{D5822F55-9E1D-4D3E-AE61-CA8ED2D6842D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JogoDeSexta", "JogodeSexta\JogoDeSexta.csproj", "{EB64D9FE-BB9E-479F-86A8-C1D12937A1E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{D5822F55-9E1D-4D3E-AE61-CA8ED2D6842D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5822F55-9E1D-4D3E-AE61-CA8ED2D6842D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5822F55-9E1D-4D3E-AE61-CA8ED2D6842D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB64D9FE-BB9E-479F-86A8-C1D12937A1E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB64D9FE-BB9E-479F-86A8-C1D12937A1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB64D9FE-BB9E-479F-86A8-C1D12937A1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB64D9FE-BB9E-479F-86A8-C1D12937A1E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
